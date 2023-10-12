@@ -1,0 +1,54 @@
+To create Local repository, 
+
+In the Cmd prompt, 
+C:\Users\sreenu.thammisetty\Documents\Git> git init my-first-repo
+                                                                              cd my-first-repo
+Then,
+
+To check the Git status,
+C:\Users\sreenu.thammisetty\Documents\Git\my-first-repo> git status
+
+To add all files to the Git staging area,
+git add .
+
+To add specific files to the staging area,
+git add srini.txt
+
+To commit to the branch,
+git commit -m "Added my first file"
+
+To associate Local Repo with Remote:
+==============================
+Login to your GitHub (Remote) using GitHub credentials (srinusforce@gmail.com  /  $r1niv@s )
+
+Create new Repository:-
+1.Keep it as Public
+2.Select 'Add a README file'
+3.Select 'ForceDotCom' under 'Add .gitignore' 
+4.Select 'Apache License 2.0' under 'Choose a license'
+5.Click 'Create Repository'
+
+6.In the Repository home page, click on '<> Code' copy that appears under 'HTTPS'
+7.Goto your local repository folder and open it in Cmd.
+   C:\Users\sreenu.thammisetty\Documents\Git\my-first-repo> 
+8. Run following :-  git remote add origin https://github.com/srinusforce/deployment.git
+
+(To check which branch currently, > git branch)
+
+9.Fetch changes from 'main' branch of Remote Repo,
+git pull origin main
+
+10.To push the changes from Local 'master' branch to Remote Repo,
+git push origin master
+
+Changes will found in Remote repo under newly created 'master' branch.
+
+To send one more file into Remote repo:
+1.Create that file in Local repo
+2.Run Git Staging command
+3.Run Git Commit command
+4.Push the master branch to Remote repo.
+
+
+
+    
